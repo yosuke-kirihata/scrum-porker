@@ -1,0 +1,45 @@
+html {
+    font-size: 62.5%; /* -> 10px; */
+}
+
+.flexbox-container-vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 50rem;
+    border: 10px solid;
+    border-radius: 20px;
+    background-color: coral;
+}
+
+.flexbox-container-horizontal-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: coral; */
+}
+
+span {
+    font-size: 16rem;
+    font-weight: bold;
+    -webkit-text-stroke: 5px black;
+    color: white;
+}
+
+.row {
+
+}
+
+.col {
+
+}
+
+ion-button {
+    --background: coral;
+    --color: white;
+}

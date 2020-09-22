@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { IonApp, IonPage, IonRouterOutlet } from '@ionic/react';
 
-function App() {
+import { CardSelectionPage } from './pages/CardSelectionPage';
+import { SelectedCardPage } from './pages/SelectedCardPage';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <div className='App'>
+      <IonApp>
+        <IonPage id='main'>
+          <IonRouterOutlet>
+            <Route exact path='/' component={CardSelectionPage} />
+            <Route path="/selected" component={SelectedCardPage} />
+          </IonRouterOutlet>
+        </IonPage>
+      </IonApp>
     </div>
+  </Router>
   );
 }
 
