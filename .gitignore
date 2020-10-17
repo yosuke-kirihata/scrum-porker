@@ -68,3 +68,8 @@ typings/
 .yarn-integrity
 .env
 .next
+
+#Ionic
+build
+android
+ios
