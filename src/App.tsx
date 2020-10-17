@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { IonApp, IonPage, IonRouterOutlet } from '@ionic/react';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 import { CardSelectionPage } from './pages/CardSelectionPage';
 import { SelectedCardPage } from './pages/SelectedCardPage';
 
 
 const App = () => {
+
+  useEffect(() => {
+    ScreenOrientation.lock(ScreenOrientation.ORIENTATIONS.PORTRAIT)
+  }, [])
+
   return (
-    <Router>
+  <Router>
     <div className='App'>
       <IonApp>
         <IonPage id='main'>
