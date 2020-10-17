@@ -11,6 +11,7 @@ html {
     height: 50rem;
     border: 10px solid;
     border-radius: 20px;
+    margin: 5rem;
     background-color: coral;
 }
 
