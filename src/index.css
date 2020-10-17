@@ -5,14 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-top: constant(safe-area-insent-top);
-  padding-top: env(safe-area-insent-top);
-  padding-left: constant(safe-area-insent-top);
-  padding-left: env(safe-area-insent-top);
-  padding-right: constant(safe-area-insent-top);
-  padding-right: env(safe-area-insent-top);
-  padding-bottom: constant(safe-area-insent-top);
-  padding-bottom: env(safe-area-insent-top);
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+  padding-left: constant(safe-area-inset-left);
+  padding-left: env(safe-area-inset-left);
+  padding-right: constant(safe-area-inset-right);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 code {

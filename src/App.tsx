@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { IonApp, IonPage, IonRouterOutlet } from '@ionic/react';
+import { IonApp, IonPage } from '@ionic/react';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 import { CardSelectionPage } from './pages/CardSelectionPage';
@@ -14,18 +14,16 @@ const App = () => {
   }, [])
 
   return (
-  <Router>
     <div className='App'>
       <IonApp>
-        <IonPage id='main'>
-          <IonRouterOutlet>
+        <IonPage>
+          <Router>
             <Route exact path='/' component={CardSelectionPage} />
             <Route path="/selected" component={SelectedCardPage} />
-          </IonRouterOutlet>
+          </Router>
         </IonPage>
       </IonApp>
     </div>
-  </Router>
   );
 }
 
