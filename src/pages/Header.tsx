@@ -2,26 +2,22 @@ import React from 'react';
 
 import { IonHeader, IonToolbar, IonTitle, IonButtons, IonBackButton } from '@ionic/react';
 
-
-type HeaderProps = {
-  title: string;
-  hasBackButton?: boolean|undefined;
+interface HeaderProps {
+  title: string
+  hasBackButton?: boolean | undefined
+  destination?: string
 }
 
-
-export const Header = (props: HeaderProps) => {
-  const hasBack = props.hasBackButton;
-
+export const Header: React.FC<HeaderProps> = ({title, hasBackButton=false, destination='/' }) => {
   return (
     <>
       <IonHeader>
         <IonToolbar>
-          {/* TODO: 画面戻り先設定 */}
-          {hasBack && 
+          {hasBackButton && 
           <IonButtons slot='start'>
-            <IonBackButton defaultHref='/'/>
+            <IonBackButton defaultHref={destination}/>
           </IonButtons>}
-          <IonTitle>{props.title}</IonTitle>
+          <IonTitle>{title}</IonTitle>
         </IonToolbar>
       </IonHeader>
     </>
