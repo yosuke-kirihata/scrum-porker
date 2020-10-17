@@ -5,6 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: constant(safe-area-insent-top);
+  padding-top: env(safe-area-insent-top);
+  padding-left: constant(safe-area-insent-top);
+  padding-left: env(safe-area-insent-top);
+  padding-right: constant(safe-area-insent-top);
+  padding-right: env(safe-area-insent-top);
+  padding-bottom: constant(safe-area-insent-top);
+  padding-bottom: env(safe-area-insent-top);
 }
 
 code {
