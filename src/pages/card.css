@@ -12,7 +12,7 @@ html {
     border: 10px solid;
     border-radius: 20px;
     margin: 5rem;
-    background-color: coral;
+    background-color: deepskyblue;
 }
 
 .flexbox-container-horizontal-center {
@@ -41,6 +41,6 @@ span {
 }
 
 ion-button {
-    --background: coral;
+    --background: deepskyblue;
     --color: white;
 }
