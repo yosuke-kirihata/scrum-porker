@@ -8,9 +8,8 @@ export const SelectedCardPage = (props: RouteComponentProps<{}, any, {value: str
   return (
     <>
       <Header title='' hasBackButton={true}/>
-      {/* TODO:cssのレスポンシブ対応(画面サイズ毎に比率を変えずにカードを大きく出したい) */}
-      <div className='flexbox-container-horizontal-center card'>
-        <div className='flexbox-container-vertical-center' onClick={
+      <div className='space'>
+        <div className='card' onClick={
           (e) => {
             e.preventDefault();
             props.history.goBack();
