@@ -8,13 +8,12 @@ html {
 }
 
 .card {
-    padding-top: 150%;
+    /* =91/64*/
+    padding-top: 142%;
 
     background: deepskyblue;
 
     box-sizing: border-box;
-    /* border: 10px solid;
-    border-radius: 20px; */
     border: 3vw solid;
     border-radius: 4vw;
 
@@ -37,4 +36,15 @@ html {
 ion-button {
     --background: deepskyblue;
     --color: white;
+}
+
+
+@media screen and (min-width: 600px) {
+/* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
+
+.space{
+    padding: 5vw 10vw;
+    /* background-color: yellow; */
+}
+
 }
